@@ -1,0 +1,21 @@
+{
+  "name": "semester-project-2",
+  "version": "1.0.0",
+  "description": "package name: (semester-project-2) my-semester-project",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "watch": "live-server",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,html}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "semester-project-2"
+  },
+  "author": "olga-goryszewska",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1"
+  }
+}
