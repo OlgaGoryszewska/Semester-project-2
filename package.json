@@ -4,7 +4,7 @@
   "description": "package name: (semester-project-2) my-semester-project",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss -c ./tailwind-config.js -i src/styles.css -o public/styles.css",
+    "build": "tailwindcss -c ./tailwind.config.js -i src/input.css -o public/styles.css --watch",
     "watch": "live-server",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,html}\""
   },
