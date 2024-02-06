@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap");
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -16,7 +22,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -444,7 +450,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -494,7 +500,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -544,12 +550,25 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-secondary {
+.bg-black{
   --tw-bg-opacity: 1;
-  background-color: rgb(255 92 0 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.text-primary {
+.font-poppins{
+  font-family: Poppins;
+}
+
+.font-raleway{
+  font-family: Raleway;
+}
+
+.text-primary{
   --tw-text-opacity: 1;
   color: rgb(50 76 42 / var(--tw-text-opacity));
+}
+
+.text-red-800{
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
 }
