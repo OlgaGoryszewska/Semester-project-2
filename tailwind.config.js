@@ -14,6 +14,7 @@ module.exports = {
           100: "#F0F0F0",
           200: "#E2E0E0",
         },
+        black: "#363636",
       },
       fontFamily: {
         raleway: ["Raleway"],
