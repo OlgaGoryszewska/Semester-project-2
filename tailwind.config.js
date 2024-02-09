@@ -21,6 +21,9 @@ module.exports = {
         poppins: ["Poppins"],
         roboto: ["Roboto Slab"],
       },
+      maxWidth: {
+        "view-port": "661px",
+      },
     },
   },
   plugins: [],

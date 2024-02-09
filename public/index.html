@@ -16,12 +16,27 @@
   </head>
   <body class="bg-neutral-200">
     <header>
-      <div class="flex justify-between bg-black items-center">
+      <div class="flex justify-between md:p bg-black items-center">
         <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
         <i class="text-white text-2xl fa-regular fa-bars p-4"></i>
       </div>
     </header>
-    <main></main>
+    <main class="m-auto max-w-view-port">
+      <div class="p-3 flex justify-end relative">
+        <input class="min-h-6 rounded p-2" type="search" placeholder="Search" />
+        <button class="absolute p-2" type="submit ">
+          <i class="fa-regular fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="relative">
+        <img
+          class="absolute z-10 inset-0"
+          src="../src/img/logo-home-auction.svg"
+        />
+        <img class="rounded-md absolute" src="../src/img/hero-img.png" />
+      </div>
+    </main>
+
     <footer></footer>
   </body>
 </html>
