@@ -5,3 +5,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply h-80 w-40 bg-white rounded-md shadow-md;
+}

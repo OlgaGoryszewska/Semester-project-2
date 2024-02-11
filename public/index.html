@@ -21,19 +21,37 @@
         <i class="text-white text-2xl fa-regular fa-bars p-4"></i>
       </div>
     </header>
-    <main class="m-auto max-w-view-port">
-      <div class="p-3 flex justify-end relative">
+    <main class="m-auto max-w-view-port p-2">
+      <div class="p-3 pr-0 flex justify-end relative">
         <input class="min-h-6 rounded p-2" type="search" placeholder="Search" />
         <button class="absolute p-2" type="submit ">
           <i class="fa-regular fa-magnifying-glass"></i>
         </button>
       </div>
-      <div class="relative">
-        <img
-          class="absolute z-10 inset-0"
-          src="../src/img/logo-home-auction.svg"
-        />
-        <img class="rounded-md absolute" src="../src/img/hero-img.png" />
+      <img class="rounded-md" src="../src/img/hero-img.jpg" />
+      <h2 class="font-poppins font-bold text-2xl mt-4 pb-2">
+        Most popular items
+      </h2>
+      <div class="grid grid-flow-col">
+        <div class="flex flex-col card">
+          <img />
+          <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
+          <p class="font-poppins text-xs p-2 pb-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
+          </p>
+          <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
+          <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
+          <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
+          <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
+          <button
+            class="border-2 border-neutral-300 font-poppins text-xs m-2 text-secondary-200"
+          >
+            Bid
+          </button>
+        </div>
+        <div class="card"></div>
+        <div class="flex flex-col card"></div>
+        <div class="flex flex-col card"></div>
       </div>
     </main>
 
