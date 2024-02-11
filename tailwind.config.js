@@ -22,7 +22,10 @@ module.exports = {
         roboto: ["Roboto Slab"],
       },
       maxWidth: {
-        "view-port": "661px",
+        "view-port": "784px",
+      },
+      width: {
+        42: "180px",
       },
     },
   },

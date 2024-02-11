@@ -7,5 +7,5 @@
 @tailwind utilities;
 
 .card {
-  @apply h-80 w-40 bg-white rounded-md shadow-md;
+  @apply h-80 w-40 sm:w-42 bg-white rounded-md shadow-md overflow-hidden;
 }
