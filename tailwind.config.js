@@ -25,6 +25,7 @@ module.exports = {
         "view-port": "784px",
       },
       width: {
+        41: "170px",
         42: "180px",
       },
     },

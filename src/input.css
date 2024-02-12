@@ -7,5 +7,13 @@
 @tailwind utilities;
 
 .card {
-  @apply h-80 w-40 sm:w-42 bg-white rounded-md shadow-md overflow-hidden;
+  @apply h-96 w-41 sm:w-42 bg-white rounded-md shadow-md overflow-hidden;
+}
+
+.card-home {
+  @apply h-72 w-41 sm:w-42 bg-white rounded-md shadow-md overflow-hidden;
+}
+
+.headline {
+  @apply font-poppins font-bold text-2xl mt-4 pb-2;
 }
