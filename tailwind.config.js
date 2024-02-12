@@ -28,6 +28,10 @@ module.exports = {
         41: "170px",
         42: "180px",
       },
+      height: {
+        73: "180px",
+        74: "303px",
+      },
     },
   },
   plugins: [],
