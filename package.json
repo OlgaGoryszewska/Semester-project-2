@@ -9,7 +9,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,html}\""
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "semester-project-2"
   },
   "author": "olga-goryszewska",
