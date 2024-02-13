@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tailwindcss -c ./tailwind.config.js -i src/input.css -o public/styles.css --watch",
     "watch": "live-server",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,html}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,html}\"",
+    "lint": "eslint public/**/*.js",
+    "lint-fix": "eslint public/**/*.js --cache --fix"
   },
   "repository": {
     "type": "module",
