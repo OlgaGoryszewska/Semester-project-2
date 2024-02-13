@@ -8,7 +8,7 @@
       content="Welcome to Home Auction, where you'll discover a world of auctions for unique treasures. Explore our diverse collection, bid with confidence, and uncover remarkable finds. Start your auction journey today!"
     />
     <title>Home Auction⎢Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/public/styles.css" />
     <script
       src="https://kit.fontawesome.com/d62daf45a3.js"
       crossorigin="anonymous"
@@ -20,22 +20,23 @@
         <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
         <i class="text-white text-2xl fa-regular fa-bars p-4"></i>
       </div>
-      <div>
-        <ul>
-          <li><a href="index.html"></a>Home</li>
-          <li><a href="../auction.html"></a>Auction</li>
-          <li><a href="../settings.html"></a>Settings</li>
-          <li><a href="../login.html"></a>Login/ Register</li>
-        </ul>
-      </div>
     </header>
     <main class="m-auto max-w-view-port p-2">
-      <div class="p-3 pr-0 flex justify-end relative">
-        <input class="min-h-6 rounded p-2" type="search" placeholder="Search" />
-        <button class="absolute p-2" type="submit ">
-          <i class="fa-regular fa-magnifying-glass"></i>
-        </button>
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-row items-center">
+            <img src="/src/img/avatar-sm.png" alt="avatar of a profile photo" class="">
+            <span class="text-sm">Johnny Lee</span>
+        </div>
+        
+        <div class="p-3 pr-0 flex justify-end relative ">
+            <input class="min-h-6 rounded p-2 " type="search" placeholder="Search" />
+            <button class="absolute p-2" type="submit ">
+              <i class="fa-regular fa-magnifying-glass"></i>
+            </button>
+        </div>
       </div>
+      
+      
       <img class="rounded-md" src="../src/img/hero-img.jpg" />
       <h2 class="headline">Most popular items</h2>
       <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
