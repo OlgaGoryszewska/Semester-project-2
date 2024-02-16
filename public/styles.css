@@ -643,10 +643,6 @@ video {
   justify-content: flex-end;
 }
 
-.justify-center{
-  justify-content: center;
-}
-
 .justify-between{
   justify-content: space-between;
 }
@@ -926,11 +922,6 @@ video {
 
   .md\:p-4{
     padding: 1rem;
-  }
-
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-xl{
