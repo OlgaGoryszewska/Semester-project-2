@@ -49,8 +49,11 @@
      
      <div class="mb-12 bg-neutral-300 h-44 md:h-64 flex justify-center relative">
         <img class="h-40 md:h-52 self-end -bottom-9 absolute " src="/src/img/avatar.png" alt="An image of a person a user registered in the auction">
-        <a href="edit.html"><i class=" font-black fa-solid fa-pen-to-square absolute right-2 top-2"></i></a>
+        <a href="edit.html"><i class=" font-black fa-solid fa-pen-to-square absolute right-2 top-2 text-secondary-200"></i></a>
      </div>
+
+
+     
 
      <div><span class="text-lg ">Johnny Lee</span></div>
      <div><span class="text-xs "> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></div>
@@ -70,6 +73,22 @@
               <span class="text-sm font-roboto">Add new "Home auction"</span>  
             </a>
         </div>
+     </div>
+
+     <div class=" flex flex-col w-auto bg-white shadow-md p-6 ">
+        <a href="profile.html"><i class="fa-solid fa-xmark flex justify-end"></i></a>
+        <span class="headline">Edit profile information</span>
+        <label for="edit-name">Name</label>
+        <input type="text" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="edit-name">
+        <label for="edit-email">Email</label>
+        <input type="email" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="edit-email" placeholder="@stud.noroff.no">
+        <label for="edit-url-media">Avatar(URL)</label>
+        <input type="email" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="edit-url-media" placeholder="Url">
+        <button
+            class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6 "
+          >
+            Save
+          </button>
      </div>
        
       <h2 class="headline">Most popular items</h2>
