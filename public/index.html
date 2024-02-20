@@ -16,18 +16,18 @@
     <script type="module" src="js/index.js"></script>
     
   </head>
-  <body class="bg-neutral-200">
+  <body class="bg-neutral-100">
     <header>
-      <div class="flex justify-between md:p bg-black items-center">
+      <div class="flex justify-between md:p bg-black items-center md:relative">
         <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
-        <i class="text-white text-2xl fa-regular fa-bars p-4 " id="burger"></i>
+        <i class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black " id="burger"></i>
       </div>
-      <div class="hidden md:flex justify-end space-y-10" id="menu">
-        <ul>
-          <li><a href="index.html"></a>Home</li>
-          <li><a href="../auction.html"></a>Auction</li>
-          <li><a href="../settings.html"></a>Settings</li>
-          <li><a href="../login.html"></a>Login/ Register</li>
+      <div class="hidden bg-black text-white font-poppins flex justify-end space-y-10 md:absolute md:z-30 md:top-0 md:p-4 md:bg-transparent md:block
+      md:right-0 " id="menu">
+        <ul class="space-y-8 md:text-xl  ">
+          <li class="md:inline md:mr-6 "><a href="index.html">Home</a></li>
+          <li class="md:inline md:mr-6"><a href="../auction-browsing.html">Auction</a></li>
+          <li class="md:inline md:mr-6"><a href="../login-form.html">Login</a></li>
         </ul>
       </div>
     </header>
