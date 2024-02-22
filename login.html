@@ -7,7 +7,7 @@
       name="description"
       content="Welcome to Home Auction, where you'll discover a world of auctions for unique treasures. Explore our diverse collection, bid with confidence, and uncover remarkable finds. Start your auction journey today!"
     />
-    <title>Home Auction⎢Home </title>
+    <title>Home Auction⎢Home</title>
     <link rel="stylesheet" href="/public/styles.css" />
     <script
       src="https://kit.fontawesome.com/d62daf45a3.js"
@@ -17,40 +17,53 @@
   </head>
   <body class="bg-neutral-100">
     <header>
-        <div class="flex justify-between md:p bg-black items-center md:relative">
-          <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
-          <i class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black " id="burger"></i>
-        </div>
-        <div class="hidden bg-black text-white font-poppins flex justify-end space-y-10 md:absolute md:z-30 md:top-0 md:p-4 md:bg-transparent md:block
-        md:right-0 " id="menu">
-          <ul class="space-y-8 md:text-xl  ">
-            <li class="md:inline md:mr-6 "><a href="logedin.html">Home</a></li>
-            <li class="md:inline md:mr-6"><a href="../auction.html">Auction</a></li>
-            <li class="md:inline md:mr-6"><a href="../profile.html">Profile</a></li>
-            <li class="md:inline md:mr-6"><a href="../settings.html">Settings</a></li>
-            <li class="md:inline md:mr-6"><a href="index.html">Logout</a></li>
-          </ul>
-        </div>
-      </header>
+      <div class="flex justify-between md:p bg-black items-center md:relative">
+        <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
+        <i
+          class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black"
+          id="burger"
+        ></i>
+      </div>
+      <div
+        class="hidden bg-black text-white font-poppins flex justify-end space-y-10 md:absolute md:z-30 md:top-0 md:p-4 md:bg-transparent md:block md:right-0"
+        id="menu"
+      >
+        <ul class="space-y-8 md:text-xl">
+          <li class="md:inline md:mr-6"><a href="logedin.html">Home</a></li>
+          <li class="md:inline md:mr-6">
+            <a href="../auction.html">Auction</a>
+          </li>
+          <li class="md:inline md:mr-6">
+            <a href="../profile.html">Profile</a>
+          </li>
+          <li class="md:inline md:mr-6">
+            <a href="../settings.html">Settings</a>
+          </li>
+          <li class="md:inline md:mr-6"><a href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </header>
     <main class="m-auto max-w-view-port p-2">
       <div class="flex flex-row justify-between">
         <div class="flex flex-row items-center">
-            <a href="profile.html">
-              <img src="/src/img/avatar-sm.png" alt="avatar of a profile photo">
-            </a>
-            <span class="text-sm">Johnny Lee</span>
-          </div>
-          
-        
-        <div class="p-3 pr-0 flex justify-end relative ">
-            <input class="min-h-6 rounded p-2 " type="search" placeholder="Search" />
-            <button class="absolute p-2" type="submit ">
-              <i class="fa-regular fa-magnifying-glass"></i>
-            </button>
+          <a href="profile.html">
+            <img src="/src/img/avatar-sm.png" alt="avatar of a profile photo" />
+          </a>
+          <span class="text-sm">Johnny Lee</span>
+        </div>
+
+        <div class="p-3 pr-0 flex justify-end relative">
+          <input
+            class="min-h-6 rounded p-2"
+            type="search"
+            placeholder="Search"
+          />
+          <button class="absolute p-2" type="submit ">
+            <i class="fa-regular fa-magnifying-glass"></i>
+          </button>
         </div>
       </div>
-      
-      
+
       <img class="rounded-md" src="../src/img/hero-img.jpg" />
       <h2 class="headline">Most popular items</h2>
       <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
@@ -121,7 +134,7 @@
       </div>
       <div class="mt-3.5 flex flex-col bg-neutral-800">
         <h4 class="headline self-start text-white ml-2">Top Home auctions</h4>
-        <div class="flex gap-2 overflow-x-auto pl-2 pb-6 pt-6 ">
+        <div class="flex gap-2 overflow-x-auto pl-2 pb-6 pt-6">
           <div class="card-home">
             <img
               class="object-cover w-42 h-73"
@@ -191,17 +204,22 @@
     </main>
 
     <footer class="bg-primary flex flex-col">
-      <img class="w-24 pt-4 " src="../src/img/sub-logo-house-auction.svg" alt="sub logo of auction house">
+      <img
+        class="w-24 pt-4"
+        src="../src/img/sub-logo-house-auction.svg"
+        alt="sub logo of auction house"
+      />
       <ul>
         <li class="text-neutral-200 text-center p-4 space-x-4">
           <a href="">Auction</a>
           <a href="">Profile </a>
         </li>
       </ul>
-      
-      <span class="text-neutral-200 text-sm m-auto ">© 2023 <a href="https://devgoddess.no/" >devgoddess</a> .All rights reserve</span>
 
-
+      <span class="text-neutral-200 text-sm m-auto"
+        >© 2023 <a href="https://devgoddess.no/">devgoddess</a> .All rights
+        reserve</span
+      >
     </footer>
   </body>
 </html>
