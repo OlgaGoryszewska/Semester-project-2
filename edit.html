@@ -17,80 +17,122 @@
   </head>
   <body class="bg-neutral-100">
     <header>
-        <div class="flex justify-between md:p bg-black items-center md:relative">
-          <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
-          <i class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black " id="burger"></i>
-        </div>
-        <div class="hidden bg-black text-white font-poppins flex justify-end space-y-10 md:absolute md:z-30 md:top-0 md:p-4 md:bg-transparent md:block
-        md:right-0 " id="menu">
-          <ul class="space-y-8 md:text-xl  ">
-            <li class="md:inline md:mr-6 "><a href="login.html">Home</a></li>
-            <li class="md:inline md:mr-6"><a href="../auction.html">Auction</a></li>
-            <li class="md:inline md:mr-6"><a href="../profile.html">Profile</a></li>
-            <li class="md:inline md:mr-6"><a href="../edit.html">Edit</a></li>
-            <li class="md:inline md:mr-6"><a href="index.html">Logout</a></li>
-          </ul>
-        </div>
-      </header>
+      <div class="flex justify-between md:p bg-black items-center md:relative">
+        <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
+        <i
+          class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black"
+          id="burger"
+        ></i>
+      </div>
+      <div
+        class="hidden bg-black text-white font-poppins flex justify-end space-y-10 md:absolute md:z-30 md:top-0 md:p-4 md:bg-transparent md:block md:right-0"
+        id="menu"
+      >
+        <ul class="space-y-8 md:text-xl">
+          <li class="md:inline md:mr-6"><a href="login.html">Home</a></li>
+          <li class="md:inline md:mr-6">
+            <a href="../auction.html">Auction</a>
+          </li>
+          <li class="md:inline md:mr-6">
+            <a href="../profile.html">Profile</a>
+          </li>
+          <li class="md:inline md:mr-6"><a href="../edit.html">Edit</a></li>
+          <li class="md:inline md:mr-6"><a href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </header>
     <main class="m-auto max-w-view-port p-2">
       <div class="flex flex-row justify-between">
         <div class="flex flex-row items-center">
-            <span class="text-xs md:text-lg text-secondary-200 ">1000 CREDITS</span>
-          </div>
-          
-        
-        <div class="p-3 pr-0 flex justify-end relative ">
-            <input class="min-h-6 rounded p-2 " type="search" placeholder="Search" />
-            <button class="absolute p-2" type="submit ">
-              <i class="fa-regular fa-magnifying-glass"></i>
-            </button>
+          <span class="text-xs md:text-lg text-secondary-200"
+            >1000 CREDITS</span
+          >
+        </div>
+
+        <div class="p-3 pr-0 flex justify-end relative">
+          <input
+            class="min-h-6 rounded p-2"
+            type="search"
+            placeholder="Search"
+          />
+          <button class="absolute p-2" type="submit ">
+            <i class="fa-regular fa-magnifying-glass"></i>
+          </button>
         </div>
       </div>
-     
-     <div class="mb-12 bg-neutral-300 h-44 md:h-64 flex justify-center relative">
-        <img class="h-40 md:h-52 self-end -bottom-9 absolute " src="/src/img/avatar.png" alt="An image of a person a user registered in the auction">
-        <a href="edit.html"><i class=" font-black fa-solid fa-pen-to-square absolute right-2 top-2 text-secondary-200"></i></a>
-     </div>
 
+      <div
+        class="mb-12 bg-neutral-300 h-44 md:h-64 flex justify-center relative"
+      >
+        <img
+          class="h-40 md:h-52 self-end -bottom-9 absolute"
+          src="/src/img/avatar.png"
+          alt="An image of a person a user registered in the auction"
+        />
+        <a href="edit.html"
+          ><i
+            class="font-black fa-solid fa-pen-to-square absolute right-2 top-2 text-secondary-200"
+          ></i
+        ></a>
+      </div>
 
-     
-
-     <div><span class="text-lg ">Johnny Lee</span></div>
-     <div><span class="text-xs "> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></div>
-     <div class=" mt-5 flex flex-row justify-between border-b-2">
+      <div><span class="text-lg">Johnny Lee</span></div>
+      <div>
+        <span class="text-xs">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+        >
+      </div>
+      <div class="mt-5 flex flex-row justify-between border-b-2">
         <div class="flex flex-row items-center">
-            <a href="add-item.html">
-                <i class="fa-solid fa-plus p-2"></i>
-              
-              <span class="text-sm font-roboto">Add new item</span>  
-            </a>
-        </div>
-     </div>
-     <div class=" mt-5 mb-5 flex flex-row justify-between border-b-2">
-        <div class="flex flex-row items-center">
-            <a href="add-auction.html">
-                <i class="fa-solid fa-plus p-2"></i>
-              <span class="text-sm font-roboto">Add new "Home auction"</span>  
-            </a>
-        </div>
-     </div>
+          <a href="add-item.html">
+            <i class="fa-solid fa-plus p-2"></i>
 
-     <div class=" flex flex-col w-auto bg-white shadow-md p-6 relative ">
-        <a href="profile.html"><i class=" fa-solid fa-xmark "></i></a>
+            <span class="text-sm font-roboto">Add new item</span>
+          </a>
+        </div>
+      </div>
+      <div class="mt-5 mb-5 flex flex-row justify-between border-b-2">
+        <div class="flex flex-row items-center">
+          <a href="add-auction.html">
+            <i class="fa-solid fa-plus p-2"></i>
+            <span class="text-sm font-roboto">Add new "Home auction"</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-auto bg-white shadow-md p-6 relative">
+        <a href="profile.html"><i class="fa-solid fa-xmark"></i></a>
         <span class="headline">Edit profile information</span>
         <label for="edit-name">Name</label>
-        <input type="text" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="edit-name">
+        <input
+          type="text"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="edit-name"
+        />
         <label for="edit-email">Email</label>
-        <input type="email" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="edit-email" placeholder="@stud.noroff.no">
+        <input
+          type="email"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="edit-email"
+          placeholder="@stud.noroff.no"
+        />
         <label for="edit-url-media">Avatar(URL)</label>
-        <input type="email" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="edit-url-media" placeholder="Url">
+        <input
+          type="email"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="edit-url-media"
+          placeholder="Url"
+        />
         <button
-            class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6 "
-          >
-            Save
-          </button>
-     </div>
-       
+          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
+        >
+          Save
+        </button>
+      </div>
+
       <h2 class="headline">Most popular items</h2>
       <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
         <div class="flex flex-col card">
@@ -158,117 +200,121 @@
           </button>
         </div>
         <div class="flex flex-col card">
-            <img class="object-cover max-h-36" src="../src/img/item.png" />
-            <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
-            <p class="font-poppins text-xs p-2 pb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
-            <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
-            <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
-            <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
-            <button
-              class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
-            >
-              Bid
-            </button>
-          </div>
-          <div class="flex flex-col card">
-            <img class="object-cover max-h-36" src="../src/img/item.png" />
-            <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
-            <p class="font-poppins text-xs p-2 pb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
-            <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
-            <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
-            <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
-            <button
-              class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
-            >
-              Bid
-            </button>
-          </div>
-          <div class="flex flex-col card">
-            <img class="object-cover max-h-36" src="../src/img/item.png" />
-            <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
-            <p class="font-poppins text-xs p-2 pb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
-            <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
-            <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
-            <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
-            <button
-              class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
-            >
-              Bid
-            </button>
-          </div>
-          <div class="flex flex-col card">
-            <img class="object-cover max-h-36" src="../src/img/item.png" />
-            <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
-            <p class="font-poppins text-xs p-2 pb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
-            <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
-            <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
-            <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
-            <button
-              class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
-            >
-              Bid
-            </button>
-          </div>
-          <div class="flex flex-col card">
-            <img class="object-cover max-h-36" src="../src/img/item.png" />
-            <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
-            <p class="font-poppins text-xs p-2 pb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
-            <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
-            <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
-            <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
-            <button
-              class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
-            >
-              Bid
-            </button>
-          </div>
-          <div class="flex flex-col card">
-            <img class="object-cover max-h-36" src="../src/img/item.png" />
-            <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
-            <p class="font-poppins text-xs p-2 pb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
-            <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
-            <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
-            <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
-            <button
-              class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
-            >
-              Bid
-            </button>
-          </div>
+          <img class="object-cover max-h-36" src="../src/img/item.png" />
+          <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
+          <p class="font-poppins text-xs p-2 pb-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
+          <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
+          <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
+          <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
+          <button
+            class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
+          >
+            Bid
+          </button>
+        </div>
+        <div class="flex flex-col card">
+          <img class="object-cover max-h-36" src="../src/img/item.png" />
+          <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
+          <p class="font-poppins text-xs p-2 pb-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
+          <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
+          <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
+          <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
+          <button
+            class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
+          >
+            Bid
+          </button>
+        </div>
+        <div class="flex flex-col card">
+          <img class="object-cover max-h-36" src="../src/img/item.png" />
+          <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
+          <p class="font-poppins text-xs p-2 pb-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
+          <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
+          <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
+          <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
+          <button
+            class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
+          >
+            Bid
+          </button>
+        </div>
+        <div class="flex flex-col card">
+          <img class="object-cover max-h-36" src="../src/img/item.png" />
+          <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
+          <p class="font-poppins text-xs p-2 pb-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
+          <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
+          <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
+          <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
+          <button
+            class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
+          >
+            Bid
+          </button>
+        </div>
+        <div class="flex flex-col card">
+          <img class="object-cover max-h-36" src="../src/img/item.png" />
+          <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
+          <p class="font-poppins text-xs p-2 pb-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
+          <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
+          <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
+          <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
+          <button
+            class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
+          >
+            Bid
+          </button>
+        </div>
+        <div class="flex flex-col card">
+          <img class="object-cover max-h-36" src="../src/img/item.png" />
+          <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
+          <p class="font-poppins text-xs p-2 pb-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
+          <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
+          <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
+          <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
+          <button
+            class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
+          >
+            Bid
+          </button>
+        </div>
       </div>
     </main>
 
     <footer class="bg-primary flex flex-col">
-      <img class="w-24 pt-4 " src="../src/img/sub-logo-house-auction.svg" alt="sub logo of auction house">
+      <img
+        class="w-24 pt-4"
+        src="../src/img/sub-logo-house-auction.svg"
+        alt="sub logo of auction house"
+      />
       <ul>
         <li class="text-neutral-200 text-center p-4 space-x-4">
           <a href="auction.html">Auction</a>
           <a href="profile.html">Profile </a>
         </li>
       </ul>
-      
-      <span class="text-neutral-200 text-sm m-auto ">© 2023 <a href="https://devgoddess.no/" >devgoddess</a> .All rights reserve</span>
 
-
+      <span class="text-neutral-200 text-sm m-auto"
+        >© 2023 <a href="https://devgoddess.no/">devgoddess</a> .All rights
+        reserve</span
+      >
     </footer>
   </body>
 </html>
-
