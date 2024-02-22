@@ -1,0 +1,1 @@
+import { API_BASE_URL, API_REGISTER_URL } from "../util/variables.mjs";
