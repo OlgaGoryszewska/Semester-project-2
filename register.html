@@ -14,56 +14,86 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="public/js/index.mjs"></script>
-    
   </head>
   <body class="bg-neutral-100">
     <header>
       <div class="flex justify-between md:p bg-black items-center md:relative">
         <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
-        <i class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black " id="burger"></i>
+        <i
+          class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black"
+          id="burger"
+        ></i>
       </div>
-      <div class="hidden bg-black text-white font-poppins flex justify-end space-y-10 md:absolute md:z-30 md:top-0 md:p-4 md:bg-transparent md:block
-      md:right-0 " id="menu">
-        <ul class="space-y-8 md:text-xl  ">
-          <li class="md:inline md:mr-6 "><a href="index.html">Home</a></li>
-          <li class="md:inline md:mr-6"><a href="../auction-browsing.html">Auction</a></li>
+      <div
+        class="hidden bg-black text-white font-poppins flex justify-end space-y-10 md:absolute md:z-30 md:top-0 md:p-4 md:bg-transparent md:block md:right-0"
+        id="menu"
+      >
+        <ul class="space-y-8 md:text-xl">
+          <li class="md:inline md:mr-6"><a href="index.html">Home</a></li>
+          <li class="md:inline md:mr-6">
+            <a href="../auction-browsing.html">Auction</a>
+          </li>
           <li class="md:inline md:mr-6"><a href="login-form.html">Login</a></li>
         </ul>
       </div>
-    </header> 
-    <main class="m-auto max-w-view-port p-2 flex flex-col gap-2" >
-    <span class="headline">Register</span>
-    <label for="name">Name</label>
-      <input type="text" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="name">
+    </header>
+    <main class="m-auto max-w-view-port p-2 flex flex-col gap-2">
+      <span class="headline">Register</span>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="border rounded-md border-neutral-200 block w-full p-2.5"
+        id="name"
+      />
       <label for="surname">Surname</label>
-      <input type="text" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="surname">
-    <label for="register-email">Email</label>
-    <input type="email" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="register-email" placeholder="@stud.noroff.no">
-    <label for="register-password">Password</label>
-    <input type="password" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="register-password" placeholder="Password">
-    <label for="register-avatar">Avatar(URL)</label>
-    <input type="url" class="border rounded-md border-neutral-200 block w-full p-2.5 " id="register-avatar">
-    <button
-        class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6 "
+      <input
+        type="text"
+        class="border rounded-md border-neutral-200 block w-full p-2.5"
+        id="surname"
+      />
+      <label for="register-email">Email</label>
+      <input
+        type="email"
+        class="border rounded-md border-neutral-200 block w-full p-2.5"
+        id="register-email"
+        placeholder="@stud.noroff.no"
+      />
+      <label for="register-password">Password</label>
+      <input
+        type="password"
+        class="border rounded-md border-neutral-200 block w-full p-2.5"
+        id="register-password"
+        placeholder="Password"
+      />
+      <label for="register-avatar">Avatar(URL)</label>
+      <input
+        type="url"
+        class="border rounded-md border-neutral-200 block w-full p-2.5"
+        id="register-avatar"
+      />
+      <button
+        class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
       >
         Register
       </button>
-    </div>
-  </main>
-  <footer class="bg-primary flex flex-col">
-    <img class="w-24 pt-4 " src="../src/img/sub-logo-house-auction.svg" alt="sub logo of auction house">
-    <ul>
-      <li class="text-neutral-200 text-center p-4 space-x-4">
-        <a href="auction.html">Auction</a>
-        <a href="profile.html">Profile </a>
-      </li>
-    </ul>
-    
-    <span class="text-neutral-200 text-sm m-auto ">© 2023 <a href="https://devgoddess.no/" >devgoddess</a> .All rights reserve</span>
+    </main>
+    <footer class="bg-primary flex flex-col">
+      <img
+        class="w-24 pt-4"
+        src="../src/img/sub-logo-house-auction.svg"
+        alt="sub logo of auction house"
+      />
+      <ul>
+        <li class="text-neutral-200 text-center p-4 space-x-4">
+          <a href="auction.html">Auction</a>
+          <a href="profile.html">Profile </a>
+        </li>
+      </ul>
 
-
-  </footer>
-</body>
+      <span class="text-neutral-200 text-sm m-auto"
+        >© 2023 <a href="https://devgoddess.no/">devgoddess</a> .All rights
+        reserve</span
+      >
+    </footer>
+  </body>
 </html>
-    
-    
