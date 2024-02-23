@@ -13,7 +13,7 @@
       src="https://kit.fontawesome.com/d62daf45a3.js"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="public/js/index.mjs"></script>
+    <script type="module" src="public/js/index.mjs" defer></script>
   </head>
   <body class="bg-neutral-100">
     <header>
@@ -39,73 +39,92 @@
     </header>
     <main class="m-auto max-w-view-port p-2 flex flex-col gap-2">
       <span class="headline">Register</span>
-      <label for="name">Name</label>
-      <input
-        type="text"
-        class="border rounded-md border-neutral-200 block w-full p-2.5"
-        id="name"
-        name="name"
-        placeholder="name"
-      />
-      <label for="bio">Bio</label>
-      <input
-        type="text"
-        class="border rounded-md border-neutral-200 block w-full p-2.5"
-        id="bio"
-        name="Write a bit about yourself"
-        placeholder="Bio"
-      />
-      <label for="register-email">Email</label>
-      <input
-        type="email"
-        class="border rounded-md border-neutral-200 block w-full p-2.5"
-        id="register-email"
-        placeholder="@stud.noroff.no"
-      />
-      <label for="register-password">Password</label>
-      <input
-        type="password"
-        class="border rounded-md border-neutral-200 block w-full p-2.5"
-        id="register-password"
-        placeholder="Password"
-      />
-      <label for="register-avatar">Avatar(URL)</label>
-      <input
-        type="url"
-        class="border rounded-md border-neutral-200 block w-full p-2.5"
-        id="register-avatar"
-        placeholder="Enter avatar URL"
-      />
+      <form id="register-form">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="name"
+          name="name"
+          placeholder="name"
+          required
+        />
+        <span class="text-sm text-gray-500 help"
+          >Choose a unique username. It should be between 6 and 20 characters
+          long.</span
+        >
+        <label for="bio">Bio</label>
+        <input
+          type="text"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="bio"
+          name="Write a bit about yourself"
+          placeholder="Bio"
+        />
+        <label for="register-email">Email</label>
+        <input
+          type="email"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="register-email"
+          placeholder="@stud.noroff.no"
+          required
+        />
 
-      <label for="avatar-alt">Avatar Alt Text</label>
-      <input
-        type="text"
-        class="border rounded-md border-neutral-200 block w-full p-2.5"
-        id="avatar-alt"
-        name="avatar-alt"
-        placeholder="Enter alt text for avatar"
-      />
-      <label for="register-baner">Baner(URL)</label>
-      <input
-        type="url"
-        class="border rounded-md border-neutral-200 block w-full p-2.5"
-        id="register-baner"
-        placeholder="Enter avatar URL"
-      />
+        <span class="text-sm text-gray-500 help"
+          >Enter a valid email address. Only @stud.noroff.no domains are
+          allowed.</span
+        >
+        <label for="register-password">Password</label>
+        <input
+          type="password"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="register-password"
+          placeholder="Password"
+          required
+          minlength="8"
+        />
+        <span class="text-sm text-gray-500 help"
+          >Your password should be at least 8 characters long.</span
+        >
 
-      <label for="baner-alt">Baner Alt Text</label>
-      <input
-        type="text"
-        class="border rounded-md border-neutral-200 block w-full p-2.5"
-        id="baner-alt"
-        name="baner-alt"
-        placeholder="Enter alt text for baner"
-      />
-      <button
-        class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
-      >
-        Register
-      </button>
+        <label for="register-avatar">Avatar(URL)</label>
+        <input
+          type="url"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="register-avatar"
+          placeholder="Enter avatar URL"
+        />
+
+        <label for="avatar-alt" class="hidden">Avatar Alt Text</label>
+        <input
+          type="text"
+          class="border rounded-md border-neutral-200 block w-full p-2.5 hidden"
+          id="avatar-alt"
+          name="avatar-alt"
+          placeholder="Enter alt text for avatar"
+        />
+        <label for="register-baner">Baner(URL)</label>
+        <input
+          type="url"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="register-baner"
+          placeholder="Enter avatar URL"
+        />
+
+        <label for="baner-alt " class="hidden">Baner Alt Text</label>
+        <input
+          type="text"
+          class="border rounded-md border-neutral-200 block w-full p-2.5 hidden"
+          id="baner-alt"
+          name="baner-alt"
+          placeholder="Enter alt text for baner"
+        />
+        <button
+          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
+        >
+          Register
+        </button>
+      </form>
     </main>
     <footer class="bg-primary flex flex-col">
       <img
