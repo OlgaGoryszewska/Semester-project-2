@@ -11,4 +11,5 @@ form.addEventListener("submit",(event) =>{
     
     //Send it to the API
     register(profile)
-})}
+})
+}
