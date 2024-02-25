@@ -1,11 +1,29 @@
-import {API_BASE_URL } from "./constants.mjs";
+import { API_BASE_URL } from "./constants.mjs";
 
-const action = "/auction/auth/register";
-const method ="post";
-
-export async function register (profile){
-    console.log(action);
+export async function register(profile) {
+    const action = "/auction/auth/register";
     const registerURL = API_BASE_URL + action;
-    console.log(registerURL);
-    
+
+    try {
+        const response = await fetch(registerURL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(profile)
+        });
+
+        if (!response.ok) {
+            const responseData = await response.json();
+            console.error("Error response from server:", responseData);
+            console.error("HTTP Status Code:", response.status);
+            // Additional error handling logic can go here if needed
+            return; // Stop further processing if request failed
+        }
+
+        const result = await response.json();
+        console.log("Registration successful:", result);
+    } catch (error) {
+        console.error("Error while registering:", error);
+    }
 }
