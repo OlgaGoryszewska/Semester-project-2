@@ -1,8 +1,0 @@
-import { registerFormHandler } from "./register.mjs";
-
-function miniRouter() {
-  if (window.location.pathname === "/register") {
-    registerFormHandler();
-  }
-}
-miniRouter();
