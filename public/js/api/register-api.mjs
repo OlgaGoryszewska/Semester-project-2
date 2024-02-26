@@ -17,8 +17,8 @@ export async function register(profile) {
             const responseData = await response.json();
             console.error("Error response from server:", responseData);
             console.error("HTTP Status Code:", response.status);
-            // Additional error handling logic can go here if needed
-            return; // Stop further processing if request failed
+           
+            return
         }
 
         const result = await response.json();
