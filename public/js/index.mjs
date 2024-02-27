@@ -4,6 +4,8 @@ import { register } from "./auth/register.mjs";
 import {registerFormHandler} from "./handlers/register.mjs";
 import { loginFormHandler } from "./handlers/login.mjs";
 
+import * as listing from "./listing/index.mjs"
+
 
 const path = location.pathname;
 
