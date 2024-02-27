@@ -1,4 +1,5 @@
 import { API_BASE_URL } from "../api/constants.mjs";
+import * as storage from "../storage/index.mjs"
 
 export async function login(profile) {
     const action = "/auction/auth/login";
@@ -17,13 +18,15 @@ export async function login(profile) {
             const responseData = await response.json();
             console.error("Error response from server:", responseData);
             console.error("HTTP Status Code:", response.status);
-           
-            return
+            return;
         }
 
-        const result = await response.json();
-        console.log("Registration successful:", result);
+        const {accessToken,...user} = await response.json();
+        console.log("Registration successful");
+
+        storage.save("token", accessToken)
+        storage.save("profile",user)
     } catch (error) {
-        console.error("Error while logining:", error);
+        console.error("Error while logging in:", error);
     }
 }
