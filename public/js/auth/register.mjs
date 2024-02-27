@@ -1,4 +1,4 @@
-import { API_BASE_URL } from "./constants.mjs";
+import { API_BASE_URL } from "../api/constants.mjs";
 
 export async function register(profile) {
     const action = "/auction/auth/register";
