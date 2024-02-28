@@ -1,6 +1,6 @@
 import {load} from "../storage/index.mjs";
 
-export function headers(){
+export async function headers(){
     const token = load("token");
 
     return{

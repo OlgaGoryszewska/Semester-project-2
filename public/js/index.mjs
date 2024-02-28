@@ -3,8 +3,9 @@ import { burger } from "./handlers/menu.mjs";
 import { register } from "./auth/register.mjs";
 import {registerFormHandler} from "./handlers/register.mjs";
 import { loginFormHandler } from "./handlers/login.mjs";
+import {createItem} from "./listing/create.mjs"
 
-import * as listing from "./listing/index.mjs"
+//import * as listing from "./listing/index.mjs"
 
 
 const path = location.pathname;
@@ -15,4 +16,8 @@ if(path === '/register.html'){
     loginFormHandler()
 }
 
+createItem({
+    title: "example",
+    body: "example"
+})
 

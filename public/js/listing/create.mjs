@@ -12,7 +12,10 @@ export async function createItem(postData){
         body: JSON.stringify(postData)
     })
 
-    const Item = await response.json();
+    const item = await response.json();
 
-    console.log(post)
+    console.log(item)
+
+
+    
 }
