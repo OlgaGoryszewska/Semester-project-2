@@ -4,16 +4,18 @@ import { authFetch } from "../api/authFetch.mjs";
 const action ="/auction/listings/";
 const method= "get";
 
-export async function getItems(postData){
-    const getItemsURL = `${API_BASE_URL}${action}${postData}`;
+export async function getItems(){
+    const getItemsURL = `${API_BASE_URL}${action}`;
+
+    console.log(`Request URL: ${getItemsURL}`);
 
     const response = await authFetch(getItemsURL,{
         method
     })
 
-   return await response.json();
+    return await response.json();
 }
-console.log(`Request URL: ${getItemsURL}`);
+
 
 
 //export async function getItem(id){
