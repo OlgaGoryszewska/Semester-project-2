@@ -6,7 +6,7 @@ import { loginFormHandler } from "./handlers/login.mjs";
 import {createItem} from "./listing/create.mjs"
 import { updateItem } from "./listing/update.mjs";
 import { removeItem } from "./listing/remove.mjs";
-import { getItem } from "./listing/get.mjs";
+//import { getItem } from "./listing/get.mjs";
 import { getItems } from "./listing/get.mjs";
 
 //import * as listing from "./listing/index.mjs"
@@ -25,4 +25,5 @@ if(path === '/register.html'){
 //removeItem()
 //getItem()
 getItems()
+
 
