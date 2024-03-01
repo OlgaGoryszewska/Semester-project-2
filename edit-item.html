@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to Home Auction, where you'll discover a world of auctions for unique treasures. See new items. Explore our diverse collection, bid with confidence, and uncover remarkable finds. "
+      content="profile page for registered user for an auction page. Which can add and bid items listed on the current auction. "
     />
-    <title>Home Auction⎢Auction</title>
+    <title>Home Auction⎢Profile</title>
     <link rel="stylesheet" href="/public/styles.css" />
     <script
       src="https://kit.fontawesome.com/d62daf45a3.js"
@@ -30,11 +30,13 @@
       >
         <ul class="space-y-8 md:text-xl">
           <li class="md:inline md:mr-6"><a href="login.html">Home</a></li>
-          <li class="md:inline md:mr-6"><a href="auction.html">Auction</a></li>
-          <li class="md:inline md:mr-6"><a href="profile.html">Profile</a></li>
           <li class="md:inline md:mr-6">
-            <a href="settings.html">Settings</a>
+            <a href="../auction.html">Auction</a>
           </li>
+          <li class="md:inline md:mr-6">
+            <a href="../profile.html">Profile</a>
+          </li>
+          <li class="md:inline md:mr-6"><a href="../edit.html">Edit</a></li>
           <li class="md:inline md:mr-6"><a href="index.html">Logout</a></li>
         </ul>
       </div>
@@ -42,10 +44,9 @@
     <main class="m-auto max-w-view-port p-2">
       <div class="flex flex-row justify-between">
         <div class="flex flex-row items-center">
-          <a href="profile.html">
-            <img src="/src/img/avatar-sm.png" alt="avatar of a profile photo" />
-          </a>
-          <span class="text-sm">Johnny Lee</span>
+          <span class="text-xs md:text-lg text-secondary-200"
+            >1000 CREDITS</span
+          >
         </div>
 
         <div class="p-3 pr-0 flex justify-end relative">
@@ -59,57 +60,92 @@
           </button>
         </div>
       </div>
-      <div 
-        class="flex flex-col w-auto bg-white rounded-md shadow-md overflow-hidden"
+
+      <div
+        class="mb-12 bg-neutral-300 h-44 md:h-64 flex justify-center relative"
       >
         <img
-          class="object-cover max-h-52 md:max-h-96"
-          src="../src/img/item.png"
+          class="h-40 md:h-52 self-end -bottom-9 absolute"
+          src="/src/img/avatar.png"
+          alt="An image of a person a user registered in the auction"
         />
-        <h3 class="font-roboto text-base p-2 pb-0">Item name</h3>
-        <p class="font-poppins text-xs p-2 pb-0">
+        <a href="edit.html"
+          ><i
+            class="font-black fa-solid fa-pen-to-square absolute right-2 top-2"
+          ></i
+        ></a>
+      </div>
+
+      <div><span class="text-lg">Johnny Lee</span></div>
+      <div>
+        <span class="text-xs">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
-        </p>
-        <p class="font-roboto font-medium text-xs p-2">Last biding:</p>
-        <p class="font-poppins text-xs p-2 pt-0 pb-0">50$</p>
-        <p class="font-roboto font-medium text-xs p-2">Deadline date:</p>
-        <p class="font-poppins text-xs p-2 pt-0">in 5 days</p>
-        <table class="m-4">
-          <thead>
-            <tr>
-              <th>PRICE</th>
-              <th>DATE</th>
-              <th>FROM</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border">
-              <td>60$</td>
-              <td>01.02.2024</td>
-              <td>Eddie123</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr class="border">
-              <td>60$</td>
-              <td>01.02.2024</td>
-              <td>Eddie123</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr class="border">
-              <td>60$</td>
-              <td>01.02.2024</td>
-              <td>Eddie123</td>
-            </tr>
-          </tbody>
-        </table>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+        >
+      </div>
+      <div class="mt-5 flex flex-row justify-between border-b-2">
+        <div class="flex flex-row items-center">
+          <i class="fa-solid fa-plus p-2 text-secondary-200"></i>
+          <span class="text-sm font-roboto text-secondary-200"
+            >Add new item</span
+          >
+        </div>
+      </div>
+      <div class="mt-5 mb-5 flex flex-row justify-between border-b-2">
+        <div class="flex flex-row items-center">
+          <a href="add-auction.html">
+            <i class="fa-solid fa-plus p-2"></i>
+            <span class="text-sm font-roboto">Add new "Home auction"</span>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col w-auto bg-white shadow-md p-6">
+        <a href="profile.html"
+          ><i class="fa-solid fa-xmark flex justify-end"></i
+        ></a>
+        <span class="headline">Add new item</span>
+        <label for="title">Title</label>
+        <input
+          type="text"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+          id="title"
+        />
+        <input type="Description" />
+        <label for="description">Description</label>
+        <input
+          type="text"
+          class="border rounded-md border-neutral-200 block w-full p-10"
+          id="description"
+        />
+        <input type="Description" />
+        <div class="flex flex-col md:flex-row md:space-x-6">
+          <div>
+            <label for="start-date">Start date</label>
+            <input
+              type="date"
+              id="start-date"
+              class="border rounded-md border-neutral-200 block w-full p-2.5"
+            />
+          </div>
+          <div>
+            <label for="finish-date">Finish date</label>
+            <input
+              type="date"
+              id="finish-date"
+              class="border rounded-md border-neutral-200 block w-full p-2.5"
+            />
+          </div>
+        </div>
+        <label class="mt-6" id="url-img">Add media</label>
+        <input
+          type="url"
+          id="url-img"
+          class="border rounded-md border-neutral-200 block w-full p-2.5"
+        />
         <button
-          class="border-2 border-neutral-300 rounded-sm font-poppins text-xs m-2 text-secondary-200"
+          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
         >
           Bid
         </button>
@@ -288,8 +324,8 @@
       />
       <ul>
         <li class="text-neutral-200 text-center p-4 space-x-4">
-          <a href="">Auction</a>
-          <a href="">Profile </a>
+          <a href="auction.html">Auction</a>
+          <a href="profile.html">Profile </a>
         </li>
       </ul>
 

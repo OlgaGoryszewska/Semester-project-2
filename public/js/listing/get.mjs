@@ -16,18 +16,16 @@ export async function getItems(){
     return await response.json();
 }
 
+export async function getItem(id){
+    if(!id){
+        throw new Error ("Get requires a post ID");
+    }
+    const getItemURL = `${API_BASE_URL}${action}${id}`;
 
-
-//export async function getItem(id){
-    //if(!id){
-        //throw new Error ("Get requires a post ID");
-    //}
-    //const getItemURL = `${API_BASE_URL}${action}${id}`;
-
-    //const response = await authFetch(getItemURL, {
-        //method,
+    const response = await authFetch(getItemURL, {
+        method,
     
-    //})
+    })
 
-   //return await response.json();
-//}
+   return await response.json();
+}
