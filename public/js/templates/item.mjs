@@ -68,7 +68,16 @@ export function itemTemplate(postData) {
     bidCount.classList.add("text-gray-800", "font-bold", "text-sm");
     post.appendChild(bidCount);
 
-    // Button
+     // "Edit" Button
+     const editButton = document.createElement("button");
+     editButton.textContent = "Edit";
+     editButton.classList.add("inline-block", "bg-green-500", "hover:bg-green-700", "text-black", "py-2", "px-4", "rounded", "mt-4", "mr-2");
+     editButton.addEventListener("click", () => {
+         window.location.href = `edit-item.html?id=${postData.id}`;
+     });
+     post.appendChild(editButton);
+
+    // " Bid " Button
     const button = document.createElement("button");
     button.textContent = "Bid";
     button.classList.add("inline-block", "bg-blue-500", "hover:bg-blue-700", "text-black", "py-2", "px-4", "rounded", "mt-4");
