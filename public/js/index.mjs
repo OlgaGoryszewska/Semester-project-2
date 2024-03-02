@@ -28,6 +28,7 @@ import * as itemMethods from "./listing/index.mjs"
 
 import { loadInitialPosts, loadMorePosts } from './logic/loadMoreButton.mjs';
 import {setCreateFormListener} from "./handlers/index.mjs"
+import {setUpdateFormListener} from "./handlers/index.mjs"
 //import * as listing from "./listing/index.mjs"
 
 // Initial load for the posts
@@ -52,6 +53,8 @@ if(path === '/register.html'){
 } else if (path === "/add-item.html"){
     setCreateFormListener()
 
+}else if(path === "/edit-item.html"){
+    setUpdateFormListener()
 }
 
 
