@@ -29,6 +29,7 @@ import { loginFormHandler } from "./handlers/login.mjs";
 // import { loadInitialPosts, loadMorePosts } from './logic/loadMoreButton.mjs';
 import { setCreateFormListener } from "./handlers/index.mjs";
 import { renderPosts } from "./logic/renderPosts.mjs";
+import {renderPostsForBrowsing} from "./logic/renderPostsForBrowsing.mjs";
 //import * as listing from "./listing/index.mjs"
 
 // Initial load for the posts
@@ -44,7 +45,7 @@ const path = location.pathname;
 
 switch (path) {
   case "/":
-  case "/index.html":
+  case "/index.html","/profile.html","/login.html":
     renderPosts();
     break;
   case "/register.html":
@@ -56,6 +57,8 @@ switch (path) {
   case "/add-item.html":
     setCreateFormListener();
     break;
+  case "/auction-browsing.html":
+    renderPostsForBrowsing();
   default:
     // Handle default case here
     break;
