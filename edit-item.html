@@ -7,7 +7,7 @@
       name="description"
       content="profile page for registered user for an auction page. Which can add and bid items listed on the current auction. "
     />
-    <title>Home Auction⎢Add Item</title>
+    <title>Home Auction⎢Profile</title>
     <link rel="stylesheet" href="/public/styles.css" />
     <script
       src="https://kit.fontawesome.com/d62daf45a3.js"
@@ -87,9 +87,9 @@
       </div>
       <div class="mt-5 flex flex-row justify-between border-b-2">
         <div class="flex flex-row items-center">
-          <i class="fa-solid fa-plus p-2 text-secondary-200"></i>
-          <span class="text-sm font-roboto text-secondary-200"
-            >Add new item</span
+          <a href="add-item.html"
+            ><i class="fa-solid fa-plus p-2 text-black"></i>
+            <span class="text-sm font-roboto text-black">Add new item</span></a
           >
         </div>
       </div>
@@ -105,90 +105,73 @@
         <a href="profile.html"
           ><i class="fa-solid fa-xmark flex justify-end"></i
         ></a>
-        <span class="headline">Add new item</span>
-
-        <form id="createForm">
+        <span class="headline">Edit item</span>
+        <form id="updateForm">
           <label for="title">Title</label>
           <input
             type="text"
             class="border rounded-md border-neutral-200 block w-full p-2.5"
             name="title"
-            required
+            maxlength="50"
           />
 
           <label for="description">Description</label>
           <input
-            type="text"
+            type="description"
             class="border rounded-md border-neutral-200 block w-full p-10"
             name="description"
+            maxlength="100"
           />
 
-          <label for="tags">Tags</label>
+          <label class="mt-6" id="url-img">Media</label>
+          <input
+            type="url"
+            class="border rounded-md border-neutral-200 block w-full p-2.5"
+            name="media"
+          />
+
+          <label class="mt-6">Tags</label>
           <input
             type="text"
             class="border rounded-md border-neutral-200 block w-full p-2.5"
             name="tags"
           />
-
-          <div class="flex flex-col md:flex-row md:space-x-6">
-            <div>
-              <label for="start-date">Start date</label>
-              <input
-                type="datetime-local"
-                name="created"
-                class="border rounded-md border-neutral-200 block w-full p-2.5"
-              />
-            </div>
-            <div>
-              <label for="finish-date">Finish date</label>
-              <input
-                type="datetime-local"
-                name="endsAt"
-                class="border rounded-md border-neutral-200 block w-full p-2.5"
-                required
-              />
-            </div>
-          </div>
-          <label class="mt-6" id="url-img">Media</label>
-          <input
-            type="url"
-            name="media"
-            class="border rounded-md border-neutral-200 block w-full p-2.5"
-          />
           <button
             class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
           >
-            Save
+            Update
           </button>
         </form>
       </div>
-      <h2 class="headline">Most popular items</h2>
-      <div id="container"></div>
-      <button
-        id="load-more"
-        class="border rounded-md border-secondary-200 block w-full p-2 mt-6"
-      >
-        Load More
-      </button>
 
-      <footer class="bg-primary flex flex-col">
-        <img
-          class="w-24 pt-4"
-          src="../src/img/sub-logo-house-auction.svg"
-          alt="sub logo of auction house"
-        />
-        <ul>
-          <li class="text-neutral-200 text-center p-4 space-x-4">
-            <a href="auction.html">Auction</a>
-            <a href="profile.html">Profile </a>
-          </li>
-        </ul>
-
-        <span class="text-neutral-200 text-sm m-auto"
-          >© 2023 <a href="https://devgoddess.no/">devgoddess</a> .All rights
-          reserve</span
+        <h2 class="headline">Most popular items</h2>
+        <div id="container"></div>
+        <button
+          id="load-more"
+          class="border rounded-md border-secondary-200 block w-full p-2 mt-6"
         >
-      </footer>
+          Load More
+        </button>
+
+        <footer class="bg-primary flex flex-col">
+          <img
+            class="w-24 pt-4"
+            src="../src/img/sub-logo-house-auction.svg"
+            alt="sub logo of auction house"
+          />
+          <ul>
+            <li class="text-neutral-200 text-center p-4 space-x-4">
+              <a href="auction.html">Auction</a>
+              <a href="profile.html">Profile </a>
+            </li>
+          </ul>
+
+          <span class="text-neutral-200 text-sm m-auto"
+            >© 2023 <a href="https://devgoddess.no/">devgoddess</a> .All rights
+            reserve</span
+          >
+        </footer>
+      
     </main>
   </body>
 </html>
