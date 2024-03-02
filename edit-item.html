@@ -106,8 +106,7 @@
           ><i class="fa-solid fa-xmark flex justify-end"></i
         ></a>
         <span class="headline">Edit item</span>
-        <form id="editForm">
-
+        <form id="updateForm">
           <label for="title">Title</label>
           <input
             type="text"
@@ -115,7 +114,7 @@
             name="title"
             maxlength="50"
           />
-         
+
           <label for="description">Description</label>
           <input
             type="description"
@@ -130,8 +129,8 @@
             class="border rounded-md border-neutral-200 block w-full p-2.5"
             name="media"
           />
-        
-          <label class="mt-6" id="url-img">Tags</label>
+
+          <label class="mt-6">Tags</label>
           <input
             type="text"
             class="border rounded-md border-neutral-200 block w-full p-2.5"
@@ -142,19 +141,17 @@
           >
             Update
           </button>
-        </div>
         </form>
+      </div>
 
         <h2 class="headline">Most popular items</h2>
-        <div id="container">
-          
-        </div>
+        <div id="container"></div>
         <button
-        id="load-more"
-        class="border rounded-md border-secondary-200 block w-full p-2 mt-6"
-      >
-        Load More
-      </button>
+          id="load-more"
+          class="border rounded-md border-secondary-200 block w-full p-2 mt-6"
+        >
+          Load More
+        </button>
 
         <footer class="bg-primary flex flex-col">
           <img
