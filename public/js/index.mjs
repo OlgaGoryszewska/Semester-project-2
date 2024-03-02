@@ -28,7 +28,7 @@ import { loginFormHandler } from "./handlers/login.mjs";
 
 // import { loadInitialPosts, loadMorePosts } from './logic/loadMoreButton.mjs';
 import { setCreateFormListener } from "./handlers/index.mjs";
-import { renderPosts } from "./logic/posts/renderPosts.mjs";
+import { renderPosts } from "./logic/renderPosts.mjs";
 //import * as listing from "./listing/index.mjs"
 
 // Initial load for the posts
@@ -40,7 +40,7 @@ import { renderPosts } from "./logic/posts/renderPosts.mjs";
 // router for paths
 
 const path = location.pathname;
-console.log(path);
+
 
 switch (path) {
   case "/":

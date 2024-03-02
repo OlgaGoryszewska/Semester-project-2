@@ -1,5 +1,5 @@
-import { getItems } from "../../listing/get.mjs";
-import { renderItemTemplates } from "../../templates/item.mjs";
+import { getItems } from "../listing/get.mjs";
+import { renderItemTemplates } from "../templates/item.mjs";
 import {displayErrorMessage} from "./errorMessage.mjs"
 
 export function renderPosts() {
