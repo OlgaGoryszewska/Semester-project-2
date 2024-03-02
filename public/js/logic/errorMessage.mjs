@@ -1,4 +1,4 @@
-function displayErrorMessage(container, message) {
+export function displayErrorMessage(container, message) {
  
     let errorMessage = container.querySelector(".error-message");
     if (!errorMessage) {
@@ -10,4 +10,3 @@ function displayErrorMessage(container, message) {
     errorMessage.style.color = "red"; 
     
   }
-  
