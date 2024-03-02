@@ -10,7 +10,7 @@ export function renderPosts() {
       renderItemTemplates(items, container);
     } catch (error) {
       console.error(error);
-      // Display an error message to the user
+      
       displayErrorMessage(container, "Failed to load posts. Please try again later.");
     }
   });

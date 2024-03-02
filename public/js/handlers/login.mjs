@@ -11,6 +11,8 @@ form.addEventListener("submit",(event) =>{
     const profile = Object.fromEntries(formData.entries());
     
     //Send it to the API
-    login(profile)
+    login(profile).then(response =>{
+        window.location.href = 'profile.html';
+    })
 })
 }

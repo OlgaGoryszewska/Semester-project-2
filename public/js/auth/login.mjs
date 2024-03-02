@@ -22,7 +22,7 @@ export async function login(profile) {
         }
 
         const {accessToken,...user} = await response.json();
-        console.log("Registration successful");
+        console.log("Login successful");
 
         storage.save("token", accessToken)
         storage.save("profile",user)
