@@ -13,7 +13,7 @@ export function setUpdateFormListener(){
         form.description.value = post.description;
         form.tags.value = post.tags;
         form.media.value = post.media;
-
+        
         form.addEventListener("submit",(event) =>{
             event.preventDefault();
             const form = event.target;
