@@ -1,6 +1,6 @@
 export function itemTemplate(postData) {
     const post = document.createElement("div");
-    post.classList.add("bg-white", "rounded-lg", "overflow-hidden", "shadow-lg", "m-4", "p-4", "space-y-4");
+    post.classList.add("flex","flex-col", "bg-white", "rounded-lg", "overflow-hidden", "shadow-lg", "m-4", "p-4", "space-y-4");
 
     // Title
     const title = document.createElement("h2");
@@ -30,11 +30,11 @@ export function itemTemplate(postData) {
     // Media
     if (postData.media && postData.media.length) {
         const imageContainer = document.createElement("div");
-        imageContainer.classList.add("flex", "flex-wrap", "justify-center", "gap-4");
+        imageContainer.classList.add("flex", "flex-wrap", "justify-center", "gap-4","object-cover", "max-h-36");
         postData.media.forEach(media => {
             const img = document.createElement("img");
             img.src = media;
-            img.classList.add("w-full", "max-w-xs", "h-auto", "rounded-md", "mt-2");
+            img.classList.add("w-full", "max-w-xs", "object-cover", "rounded-md", "mt-2");
             imageContainer.appendChild(img);
         });
         post.appendChild(imageContainer);
@@ -71,7 +71,7 @@ export function itemTemplate(postData) {
      // "Edit" Button
      const editButton = document.createElement("button");
      editButton.textContent = "Edit";
-     editButton.classList.add("inline-block", "bg-green-500", "hover:bg-green-700", "text-black", "py-2", "px-4", "rounded", "mt-4", "mr-2");
+     editButton.classList.add("border", "rounded-md", "border-secondary-200", "block", "w-full", "p-2", "mt-6");
      editButton.addEventListener("click", () => {
          window.location.href = `edit-item.html?id=${postData.id}`;
      });
@@ -80,7 +80,7 @@ export function itemTemplate(postData) {
     // " Bid " Button
     const button = document.createElement("button");
     button.textContent = "Bid";
-    button.classList.add("inline-block", "bg-blue-500", "hover:bg-blue-700", "text-black", "py-2", "px-4", "rounded", "mt-4");
+    button.classList.add("border", "rounded-md", "border-secondary-200", "block", "w-full", "p-2", "mt-6");
     button.addEventListener("click", () => console.log(postData));
     post.appendChild(button);
 
