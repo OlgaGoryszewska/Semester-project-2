@@ -7,3 +7,8 @@ https://www.figma.com/file/maHs6xYOkow0uGbJ2r0Uaq/Semester-project-2?type=design
 Link to trello board:
 
 https://trello.com/b/4J69P2Kd/semester-project-2
+
+
+Link to Netlify:
+
+https://home-auction.netlify.app/

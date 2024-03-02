@@ -38,14 +38,23 @@ import {renderPostsForBrowsing} from "./logic/renderPostsForBrowsing.mjs";
 
 // document.getElementById('load-more').addEventListener('click', loadMorePosts);
 
-// router for paths
+
+// path router
 
 const path = location.pathname;
 
-
 switch (path) {
   case "/":
-  case "/index.html","/profile.html","/login.html":
+  case "/index.html":
+    renderPosts();
+    break;
+  case "/profile.html":
+    renderPosts();
+    break;
+  case "/login.html":
+    renderPosts();
+    break;
+  case "/auction.html":
     renderPosts();
     break;
   case "/register.html":
@@ -59,10 +68,13 @@ switch (path) {
     break;
   case "/auction-browsing.html":
     renderPostsForBrowsing();
+    break;
   default:
     // Handle default case here
     break;
 }
+
+
 
 // Loading only 10 posts on the page
 
