@@ -1,3 +1,5 @@
+import { removeItem } from "../listing/remove.mjs";
+
 export function itemTemplate(postData) {
     const post = document.createElement("div");
     post.classList.add("flex","flex-col", "bg-white", "rounded-lg", "overflow-hidden", "shadow-lg", "m-4", "p-4", "space-y-4");
@@ -84,8 +86,30 @@ export function itemTemplate(postData) {
     button.addEventListener("click", () => console.log(postData));
     post.appendChild(button);
 
+    // "Delate" Button
+    const deleteButton = document.createElement("button");
+    deleteButton.innerHTML = '<i class="fa-sharp fa-regular fa-trash"></i> Delete';
+    deleteButton.classList.add("border", "rounded-md", "border-red-500", "text-red-500", "block", "w-full", "p-2", "mt-6");
+    deleteButton.addEventListener("click", async () => {
+        
+        const isConfirmed = confirm("Are you sure you want to delete this post?");
+        if (isConfirmed) {
+            try {
+               
+                await removeItem(postData.id);
+                post.remove(); 
+            } catch (error) {
+                console.error("Failed to delete post:", error);
+                
+                alert("Could not delete the post. Please try again.");
+            }
+        }
+    });
+    post.appendChild(deleteButton);
+
     return post;
 }
+
 
 
 export async function renderItemTemplates(postsData, parent){

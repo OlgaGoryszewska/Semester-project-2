@@ -1,7 +1,7 @@
 // imports for nav bar
 
-// import { menu } from "./handlers/menu.mjs";
-// import { burger } from "./handlers/menu.mjs";
+import { menu } from "./handlers/menu.mjs";
+import { burger } from "./handlers/menu.mjs";
 
 //imports for registration and login
 
