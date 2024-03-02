@@ -1,4 +1,3 @@
-import { removeItem } from "../listing/remove.mjs";
 
 export function itemTemplate(postData) {
     const post = document.createElement("div");
@@ -48,13 +47,7 @@ export function itemTemplate(postData) {
     createdDate.classList.add("text-gray-600", "text-xs");
     post.appendChild(createdDate);
 
-    // Update Date
-    if (postData.updated) {
-        const updatedDate = document.createElement("p");
-        updatedDate.innerText = `Updated: ${new Date(postData.updated).toLocaleDateString()}`;
-        updatedDate.classList.add("text-gray-600", "text-xs");
-        post.appendChild(updatedDate);
-    }
+   
 
     // Ends At
     if (postData.endsAt) {
@@ -64,24 +57,10 @@ export function itemTemplate(postData) {
         post.appendChild(endsAt);
     }
 
-    // Bid Count
-    const bidCount = document.createElement("p");
-    bidCount.innerText = `Bids: ${postData._count.bids}`;
-    bidCount.classList.add("text-gray-800", "font-bold", "text-sm");
-    post.appendChild(bidCount);
-
-
-    // " Bid " Button
-    const button = document.createElement("button");
-    button.textContent = "Bid";
-    button.classList.add("border", "rounded-md", "border-secondary-200", "block", "w-full", "p-2", "mt-6");
-    button.addEventListener("click", () => console.log(postData));
-    post.appendChild(button);
-
     return post;
 }
 
-export async function renderItemTemplates(postsData, parent){
+export async function renderPostsForBrowsingOnly(postsData, parent){
     postsData.forEach(postData => {
         const itemElement = itemTemplate(postData);
         parent.append(itemElement);

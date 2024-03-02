@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to Home Auction, where you'll discover a world of auctions for unique treasures. Explore our diverse collection, bid with confidence, and uncover remarkable finds. Start your auction journey today!"
+      content="Welcome to Home Auction register page, where you'll discover a world of auctions for unique treasures. Explore our diverse collection, bid with confidence, and uncover remarkable finds. Start your auction journey today!"
     />
-    <title>Home Auction⎢Home</title>
+    <title>Home Auction⎢Register</title>
     <link rel="stylesheet" href="public/styles.css" />
     <script
       src="https://kit.fontawesome.com/d62daf45a3.js"
@@ -34,6 +34,8 @@
             <a href="../auction-browsing.html">Auction</a>
           </li>
           <li class="md:inline md:mr-6"><a href="login-form.html">Login</a></li>
+          <li class="md:inline md:mr-6 text-secondary-200"><a href="register.html">Register</a></li>
+        </ul>
         </ul>
       </div>
     </header>
@@ -69,6 +71,8 @@
           id="email"
           placeholder="@stud.noroff.no or noroff.no"
           required
+          pattern="^[^@]+@stud\.noroff\.no$"
+          title="Please use a stud.noroff.no email address"
         />
 
         <span class="text-sm text-gray-500 help"
@@ -106,7 +110,7 @@
           placeholder="Enter avatar URL"
         />
         <button
-          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
+          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6 mb-12"
         >
           Register
         </button>
