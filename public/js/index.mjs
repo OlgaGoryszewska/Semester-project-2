@@ -10,6 +10,7 @@ import { logoutHandler } from "./handlers/logoutHandler.mjs";
 import { getProfile } from "./handlers/getProfile.mjs";
 import {displayProfileCredits} from "./templates/index.mjs"
 import {displayProfile} from "./templates/index.mjs"
+import {displayErrorMessage} from "./logic/index.mjs"
 
 
 
@@ -17,6 +18,7 @@ function router(){
     const path = location.pathname;
     
     logoutHandler();
+    displayErrorMessage();
 
     switch (path) {
       case "/":
