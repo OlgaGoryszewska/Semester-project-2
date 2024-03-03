@@ -1,3 +1,6 @@
+//import { displayErrorMessage } from "../logic/index.mjs";
+
+
 export function registerFormHandler() {
     const form = document.querySelector("#register-form");
 
@@ -18,13 +21,3 @@ export function registerFormHandler() {
     });
 }
 
-function displayErrorMessage(message) {
-    const errorMessageDiv = document.querySelector("#error-message");
-    if (!errorMessageDiv) {
-        console.error("Error message container not found.");
-        return;
-    }
-
-    errorMessageDiv.textContent = message;
-    errorMessageDiv.classList.remove("hidden"); 
-}

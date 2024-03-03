@@ -1,12 +1,11 @@
-export function displayErrorMessage(container, message) {
- 
-    let errorMessage = container.querySelector(".error-message");
-    if (!errorMessage) {
-      errorMessage = document.createElement("div");
-      errorMessage.classList.add("error-message"); 
-      container.appendChild(errorMessage);
-    }
-    errorMessage.textContent = message;
-    errorMessage.style.color = "red"; 
-    
+export function displayErrorMessage(message) {
+  const errorMessageDiv = document.getElementById("error-message")("#error-message");
+  if (!errorMessageDiv) {
+      console.error("Error message container not found.");
+      return;
   }
+
+  errorMessageDiv.textContent = message;
+  errorMessageDiv.classList.remove("hidden"); 
+
+}

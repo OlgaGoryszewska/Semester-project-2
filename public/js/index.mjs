@@ -10,7 +10,7 @@ import { logoutHandler } from "./handlers/logoutHandler.mjs";
 import { getProfile } from "./handlers/getProfile.mjs";
 import {displayProfileCredits} from "./templates/index.mjs"
 import {displayProfile} from "./templates/index.mjs"
-import { displayErrorMessage } from "./handlers/index.mjs.mjs"
+//import { displayErrorMessage } from "./logic/index.mjs"
 
 
 
@@ -43,7 +43,7 @@ function router(){
         renderPosts();
         break;
       case "/register.html":
-        displayErrorMessage();
+        //displayErrorMessage();
         registerFormHandler();
         break;
       case "/login-form.html":
