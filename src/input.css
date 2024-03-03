@@ -24,7 +24,6 @@
   }
 }
 
-
 @layer components {
   input:invalid + .help {
     display: block;

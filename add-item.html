@@ -18,7 +18,11 @@
   <body class="bg-neutral-100">
     <header>
       <div class="flex justify-between md:p bg-black items-center md:relative">
-        <img class="size-14" alt="sub-logo" src="../src/img/sub-logo-house-auction.svg" />
+        <img
+          class="size-14"
+          alt="sub-logo"
+          src="../src/img/sub-logo-house-auction.svg"
+        />
         <i
           class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black"
           id="burger"
@@ -29,7 +33,9 @@
         id="menu"
       >
         <ul class="space-y-8 md:text-xl">
-          <li class="md:inline md:mr-6 hover:text-secondary-200"><a href="login.html">Home</a></li>
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
+            <a href="login.html">Home</a>
+          </li>
           <li class="md:inline md:mr-6 hover:text-secondary-200">
             <a href="../auction.html">Auction</a>
           </li>
@@ -40,7 +46,6 @@
             <a href="../edit.html">Edit Profile</a>
           </li>
         </ul>
-       
       </div>
     </header>
     <main class="m-auto max-w-view-port p-2">
@@ -52,7 +57,9 @@
         </div>
 
         <div class="p-3 pr-0 flex justify-end relative">
+          <label for="search-field" class="hidden">Search</label>
           <input
+            id="search-field"
             class="min-h-6 rounded p-2"
             type="search"
             placeholder="Search"
@@ -77,8 +84,6 @@
           ></i
         ></a>
       </div>
-
-      
 
       <div class="flex flex-col w-auto bg-white shadow-md p-6">
         <a href="profile.html"

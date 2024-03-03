@@ -18,7 +18,11 @@
   <body class="bg-neutral-100">
     <header>
       <div class="flex justify-between md:p bg-black items-center md:relative">
-        <img class="size-14" alt="sub-logo" src="../src/img/sub-logo-house-auction.svg" />
+        <img
+          class="size-14"
+          alt="sub-logo"
+          src="../src/img/sub-logo-house-auction.svg"
+        />
         <i
           class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black"
           id="burger"
@@ -29,7 +33,9 @@
         id="menu"
       >
         <ul class="space-y-8 md:text-xl">
-          <li class="md:inline md:mr-6 hover:text-secondary-200"><a href="login.html">Home</a></li>
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
+            <a href="login.html">Home</a>
+          </li>
           <li class="md:inline md:mr-6 text-secondary-200">
             <a href="../auction.html">Auction</a>
           </li>
@@ -39,7 +45,9 @@
           <li class="md:inline md:mr-6 hover:text-secondary-200">
             <a href="../edit.html">Edit Profile</a>
           </li>
-          <li class="md:inline md:mr-6 hover:text-secondary-200"><button id="logout">Logout</button></li>
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
+            <button id="logout">Logout</button>
+          </li>
         </ul>
       </div>
     </header>
@@ -53,7 +61,9 @@
         </div>
 
         <div class="p-3 pr-0 flex justify-end relative">
+          <label for="search-field" class="hidden">Search</label>
           <input
+            id="search-field"
             class="min-h-6 rounded p-2"
             type="search"
             placeholder="Search"
@@ -63,18 +73,18 @@
           </button>
         </div>
       </div>
-      <div class=" mt-5 flex flex-row justify-between border-b-2">
+      <div class="mt-5 flex flex-row justify-between border-b-2">
         <div class="flex flex-row items-center mb-12 mt-12 ml-6">
-            <a href="add-item.html">
-                <i class="fa-solid fa-plus p-2 hover:text-secondary-200"></i>
-              
-              <span class="text-md font-roboto hover:text-secondary-200">Add new item</span>  
-            </a>
+          <a href="add-item.html">
+            <i class="fa-solid fa-plus p-2 hover:text-secondary-200"></i>
+
+            <span class="text-md font-roboto hover:text-secondary-200"
+              >Add new item</span
+            >
+          </a>
         </div>
-     </div>
-      <div id="container">
-        
       </div>
+      <div id="container"></div>
     </main>
 
     <footer class="bg-primary flex flex-col">
