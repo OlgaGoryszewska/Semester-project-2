@@ -7,7 +7,8 @@
       name="description"
       content="Welcome to Home Auction, where you'll discover a world of auctions for unique treasures. Explore our diverse collection, bid with confidence, and uncover remarkable finds. Start your auction journey today!"
     />
-    <title>Home Auction⎢Home</title>
+    <title>Home Auction⎢Login</title>
+    <link rel="icon" href="./src/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="public/styles.css" />
     <script
       src="https://kit.fontawesome.com/d62daf45a3.js"
@@ -29,14 +30,13 @@
         id="menu"
       >
         <ul class="space-y-8 md:text-xl">
-          <li class="md:inline md:mr-6"><a href="index.html">Home</a></li>
-          <li class="md:inline md:mr-6">
-            <a href="../auction-browsing.html">Auction</a>
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
+            <a href="index.html">Home</a>
           </li>
           <li class="md:inline md:mr-6 text-secondary-200">
             <a href="login-form.html">Login</a>
           </li>
-          <li class="md:inline md:mr-6">
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
             <a href="register.html">Register</a>
           </li>
         </ul>
@@ -44,6 +44,9 @@
     </header>
     <main class="m-auto max-w-view-port p-2 flex flex-col">
       <span class="headline">Login</span>
+      <span id="#error-message"></span>
+
+      
       <form class="mt-6" id="login-form">
         <label for="edit-email">Email</label>
         <input
@@ -67,14 +70,14 @@
           required
         />
         <button
-          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
+          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6 hover:bg-secondary-200"
         >
           Login
         </button>
       </form>
 
       <a
-        class="pt-4 underline text-black text-lg mt-12 mb-22"
+        class="pt-4 underline text-black text-lg mt-12 hover:text-secondary-200"
         href="register.html"
         >or register</a
       >

@@ -14,11 +14,16 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="/public/js/index.mjs"></script>
+    <link rel="icon" href="./src/img/favicon.png" type="image/png">
   </head>
   <body class="bg-neutral-100">
     <header>
       <div class="flex justify-between md:p bg-black items-center md:relative">
-        <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
+        <img
+          class="size-14"
+          alt="sub-logo"
+          src="../src/img/sub-logo-house-auction.svg"
+        />
         <i
           class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black"
           id="burger"
@@ -29,14 +34,18 @@
         id="menu"
       >
         <ul class="space-y-8 md:text-xl">
-          <li class="md:inline md:mr-6"><a href="login.html">Home</a></li>
-          <li class="md:inline md:mr-6">
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
+            <a href="login.html">Home</a>
+          </li>
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
             <a href="../auction.html">Auction</a>
           </li>
-          <li class="md:inline md:mr-6">
+          <li class="md:inline md:mr-6 text-secondary-200">
             <a href="../profile.html">Profile</a>
           </li>
-          <li class="md:inline md:mr-6"><a href="../edit.html">Edit</a></li>
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
+            <a href="../edit.html">Edit Profile</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -49,7 +58,9 @@
         </div>
 
         <div class="p-3 pr-0 flex justify-end relative">
+          <label for="search-field" class="hidden">Search</label>
           <input
+            id="search-field"
             class="min-h-6 rounded p-2"
             type="search"
             placeholder="Search"
@@ -73,16 +84,6 @@
             class="font-black fa-solid fa-pen-to-square absolute right-2 top-2"
           ></i
         ></a>
-      </div>
-
-      <div><span class="text-lg">Johnny Lee</span></div>
-      <div>
-        <span class="text-xs">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
-        >
       </div>
 
       <div class="flex flex-col w-auto bg-white shadow-md p-6">
@@ -140,12 +141,16 @@
             class="border rounded-md border-neutral-200 block w-full p-2.5"
           />
           <button
-            class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6"
+            class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6 hover:bg-secondary-200"
           >
             Save
           </button>
         </form>
       </div>
+      <div class="py-6"><span class="headline ">My listing</span></div>
+      
+      <div id="container"></div>
+
 
       <footer class="bg-primary flex flex-col">
         <img

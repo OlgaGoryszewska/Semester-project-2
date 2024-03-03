@@ -14,11 +14,19 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="public/js/index.mjs" defer></script>
+    <link rel="icon" href="./src/img/favicon.png" type="image/png">
+
+    
+
   </head>
   <body class="bg-neutral-100">
     <header>
       <div class="flex justify-between md:p bg-black items-center md:relative">
-        <img class="size-14" src="../src/img/sub-logo-house-auction.svg" />
+        <img
+          class="size-14"
+          src="../src/img/sub-logo-house-auction.svg"
+          alt="sub-logo"
+        />
         <i
           class="text-white text-2xl fa-regular fa-bars p-4 md:hidden md:text-black"
           id="burger"
@@ -29,11 +37,12 @@
         id="menu"
       >
         <ul class="space-y-8 md:text-xl">
-          <li class="md:inline md:mr-6"><a href="index.html">Home</a></li>
-          <li class="md:inline md:mr-6">
-            <a href="../auction-browsing.html">Auction</a>
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
+            <a href="index.html">Home</a>
           </li>
-          <li class="md:inline md:mr-6"><a href="login-form.html">Login</a></li>
+          <li class="md:inline md:mr-6 hover:text-secondary-200">
+            <a href="login-form.html">Login</a>
+          </li>
           <li class="md:inline md:mr-6 text-secondary-200">
             <a href="register.html">Register</a>
           </li>
@@ -53,8 +62,7 @@
           required
         />
         <span class="text-sm text-gray-500 help"
-          >Choose a unique username. It should be between 6 and 20 characters
-          long.</span
+          >Choose a unique username.</span
         >
         <label for="bio">Bio</label>
         <input
@@ -94,7 +102,7 @@
           >Your password should be at least 8 characters long.</span
         >
 
-        <label for="avatar">Avatar(URL)</label>
+        <label for="avatar">Avatar</label>
         <input
           type="url"
           name="avatar"
@@ -102,7 +110,7 @@
           id="avatar"
           placeholder="Enter avatar URL"
         />
-        <label for="baner">Baner(URL)</label>
+        <label for="baner">Baner</label>
         <input
           type="url"
           class="border rounded-md border-neutral-200 block w-full p-2.5"
@@ -111,7 +119,7 @@
           placeholder="Enter avatar URL"
         />
         <button
-          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6 mb-12"
+          class="border rounded-md border-secondary-200 block w-full p-2.5 mt-6 mb-12 hover:bg-secondary-200"
         >
           Register
         </button>
