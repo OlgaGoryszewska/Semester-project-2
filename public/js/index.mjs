@@ -7,6 +7,7 @@ import { loginFormHandler } from "./handlers/login.mjs";
 import { setCreateFormListener } from "./handlers/index.mjs";
 import { renderPosts } from "./logic/renderPosts.mjs";
 import { logoutHandler } from "./handlers/logoutHandler.mjs";
+import { getProfile } from "./handlers/getProfile.mjs";
 
 
 function router(){
@@ -19,6 +20,7 @@ function router(){
         renderPosts();
         break;
       case "/profile.html":
+        getProfile();
         renderPosts();
         break;
       case "/login.html":

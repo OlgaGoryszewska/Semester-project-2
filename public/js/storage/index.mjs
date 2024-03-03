@@ -19,3 +19,8 @@ export function remove(key){
 export function clear(){
     localStorage.clear();
 }
+
+export function getProfileName (){
+    const profile = load("profile");
+    return profile ? profile.name : null;
+}

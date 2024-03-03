@@ -13,12 +13,12 @@ export async function authFetch(url, options) {
     try {
         const fetchOptions = {
             ...options,
-            headers: await headers() // Wait for the headers to be resolved
+            headers: await headers() 
         };
         const response = await fetch(url, fetchOptions);
         return response;
     } catch (error) {
         console.error("Error in authFetch:", error);
-        throw error; // Re-throw the error to be handled elsewhere if needed
+        throw error; 
     }
 }

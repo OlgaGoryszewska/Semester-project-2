@@ -1,5 +1,3 @@
-import { removeItem } from "../listing/remove.mjs";
-
 export function itemTemplate(postData) {
     const post = document.createElement("div");
     post.classList.add("flex","flex-col", "bg-white", "rounded-lg", "overflow-hidden", "shadow-lg", "m-4", "p-4", "space-y-4");
