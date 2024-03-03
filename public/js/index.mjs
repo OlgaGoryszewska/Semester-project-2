@@ -8,6 +8,7 @@ import { setCreateFormListener } from "./handlers/index.mjs";
 import { renderPosts } from "./logic/renderPosts.mjs";
 import { logoutHandler } from "./handlers/logoutHandler.mjs";
 import { getProfile } from "./handlers/getProfile.mjs";
+import {displayProfileCredits} from "./templates/index.mjs"
 
 
 function router(){
@@ -20,8 +21,8 @@ function router(){
         renderPosts();
         break;
       case "/profile.html":
+        displayProfileCredits();
         getProfile();
-        renderPosts();
         break;
       case "/login.html":
         renderPosts();

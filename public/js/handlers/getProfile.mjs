@@ -1,7 +1,7 @@
 import * as storage from "../storage/index.mjs"
 import { fetchProfile } from "../api/profile/fetchProfile.mjs";
 
-export async function getProfile(){
+export async function getProfile(name){
     try{
         const name = storage.getProfileName();
         if (!name){
