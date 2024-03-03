@@ -1,3 +1,6 @@
+import {setupBidButtonListener} from "../handlers/bidHandler.mjs"
+
+
 export function itemTemplate(postData) {
     const post = document.createElement("div");
     post.classList.add("flex","flex-col", "bg-white", "rounded-lg", "overflow-hidden", "shadow-lg", "m-4", "p-4", "space-y-4");
@@ -75,8 +78,10 @@ export function itemTemplate(postData) {
     button.classList.add("border", "rounded-md", "border-secondary-200", "block", "w-full", "p-2", "mt-6");
     button.addEventListener("click", () => console.log(postData));
     post.appendChild(button);
+    setupBidButtonListener(button, postData.id);
 
     return post;
+    
 }
 
 export async function renderItemTemplates(postsData, parent){
