@@ -9,6 +9,7 @@ import { renderPosts } from "./logic/renderPosts.mjs";
 import { logoutHandler } from "./handlers/logoutHandler.mjs";
 import { getProfile } from "./handlers/getProfile.mjs";
 import {displayProfileCredits} from "./templates/index.mjs"
+import {displayProfile} from "./templates/index.mjs"
 
 
 function router(){
@@ -23,6 +24,7 @@ function router(){
       case "/profile.html":
         displayProfileCredits();
         getProfile();
+        displayProfile();
         break;
       case "/login.html":
         renderPosts();
