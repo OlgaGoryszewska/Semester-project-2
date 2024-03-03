@@ -1,5 +1,5 @@
 export function displayErrorMessage(message) {
-  const errorMessageDiv = document.getElementById("error-message")("#error-message");
+  const errorMessageDiv = document.querySelector("#error-message");
   if (!errorMessageDiv) {
       console.error("Error message container not found.");
       return;
@@ -7,5 +7,4 @@ export function displayErrorMessage(message) {
 
   errorMessageDiv.textContent = message;
   errorMessageDiv.classList.remove("hidden"); 
-
 }

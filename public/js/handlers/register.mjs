@@ -1,4 +1,5 @@
-//import { displayErrorMessage } from "../logic/index.mjs";
+import { displayErrorMessage } from "../logic/index.mjs";
+import {register} from "../auth/register.mjs"
 
 
 export function registerFormHandler() {
