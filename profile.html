@@ -36,7 +36,9 @@
           <li class="md:inline md:mr-6 text-secondary-200">
             <a href="../profile.html">Profile</a>
           </li>
-          <li class="md:inline md:mr-6 "><a href="../edit.html">Edit Profile</a></li>
+          <li class="md:inline md:mr-6">
+            <a href="../edit.html">Edit Profile</a>
+          </li>
           <li class="md:inline md:mr-6"><button id="logout">Logout</button></li>
         </ul>
       </div>
@@ -44,7 +46,9 @@
     <main class="m-auto max-w-view-port p-2">
       <div class="flex flex-row justify-between">
         <div class="flex flex-row items-center">
-          <span id = "credits-container" class="text-xs md:text-lg text-secondary-200"
+          <span
+            id="credits-container"
+            class="text-xs md:text-lg text-secondary-200"
             >Loading credits...</span
           >
         </div>
@@ -64,12 +68,13 @@
       <div
         class="mb-12 bg-neutral-300 h-44 md:h-64 flex justify-center relative"
       >
-        <img id="profile-avatar"
+        <img
+          id="profile-avatar"
           class="h-40 md:h-52 self-end -bottom-9 absolute"
           src="/src/img/avatar.png"
           alt="An image of a person a user registered in the auction"
         />
-        
+
         <a href="edit.html"
           ><i
             class="font-black fa-solid fa-pen-to-square absolute right-2 top-2"
@@ -77,9 +82,8 @@
         ></a>
       </div>
 
-      <div><p class="text-lg" id="profile-name">NAME </p></div>
-      <div class=" pb-6">
-        
+      <div><p class="text-lg" id="profile-name"></p></div>
+      <div class="pb-6">
         <span class="text-xs pb-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum
@@ -88,14 +92,10 @@
         >
       </div>
       <div id="profile-container">
-        
-        <p class="text-lg pb-6" id="profile-email">EMAIL </p>
-        <p  class="text-lg pb-6" id="profile-credits">CREDITS </p>
-        <p class="text-lg pb-6" id="profile-wins">WINS </p>
-        <p class="text-lg pb-6" id="profile-listings">LISTING </p>
-    </div>
-    
-
+        <p class="text-lg pb-6" id="profile-email">EMAIL</p>
+        <p class="text-lg pb-6" id="profile-credits">CREDITS</p>
+        <p class="text-lg pb-6" id="profile-listings">LISTING</p>
+      </div>
     </main>
 
     <footer class="bg-primary flex flex-col">

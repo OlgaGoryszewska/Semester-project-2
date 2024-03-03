@@ -17,6 +17,4 @@ export async function displayProfileCredits() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    displayProfileCredits();
-});
+

@@ -21,6 +21,11 @@ function router(){
       case "/index.html":
         renderPosts();
         break;
+      case "/edit.html":
+        displayProfileCredits();
+        displayProfile();
+        getProfile();
+        break;
       case "/profile.html":
         displayProfileCredits();
         getProfile();
