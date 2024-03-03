@@ -15,6 +15,7 @@ import {displayProfile} from "./templates/index.mjs"
 
 function router(){
     const path = location.pathname;
+    
     logoutHandler();
 
     switch (path) {

@@ -23,8 +23,5 @@ export async function authFetch(url, options) {
     }
 }
 
-export function isUserAuthenticated() {
-    const authToken = load('authToken');
-    return Boolean(authToken);
-}
+
 
