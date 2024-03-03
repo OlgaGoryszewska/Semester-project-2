@@ -73,7 +73,7 @@ export function itemTemplate(postData) {
     // " Bid " Button
     const button = document.createElement("button");
     button.textContent = "Bid";
-    button.classList.add("border", "rounded-md", "border-secondary-200", "block", "w-full", "p-2", "mt-6");
+    button.classList.add("border", "rounded-md", "border-secondary-200", "block", "w-full", "p-2", "mt-6","hover:bg-secondary-200");
     button.addEventListener("click", () => console.log(postData));
     post.appendChild(button);
 
