@@ -1,6 +1,3 @@
-export * from "./loadMoreButton.mjs"
-export {loadInitialPosts} from "./loadMoreButton.mjs"
-export {loadMorePosts} from "./loadMoreButton.mjs"
 export {displayErrorMessage} from "./errorMessage.mjs"
 export {renderPosts} from "./renderPosts.mjs"
-export { renderPostsForBrowsing } from "./renderPostsForBrowsing.mjs"
+export {placeBid} from "./bidLogic.mjs"

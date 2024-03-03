@@ -624,12 +624,20 @@ input:invalid + .help {
   margin-bottom: 3rem;
 }
 
-.mb-52{
-  margin-bottom: 13rem;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-3\.5{
+  margin-top: 0.875rem;
 }
 
 .mt-5{
@@ -640,8 +648,32 @@ input:invalid + .help {
   margin-top: 1.5rem;
 }
 
+.mb-72{
+  margin-bottom: 18rem;
+}
+
+.mb-52{
+  margin-bottom: 13rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .mb-28{
@@ -681,6 +713,14 @@ input:invalid + .help {
   height: 11rem;
 }
 
+.h-73{
+  height: 180px;
+}
+
+.h-74{
+  height: 303px;
+}
+
 .max-h-36{
   max-height: 9rem;
 }
@@ -695,6 +735,14 @@ input:invalid + .help {
 
 .w-24{
   width: 6rem;
+}
+
+.w-41{
+  width: 170px;
+}
+
+.w-42{
+  width: 180px;
 }
 
 .w-auto{
@@ -763,12 +811,20 @@ input:invalid + .help {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.self-start{
+  align-self: flex-start;
+}
+
 .self-end{
   align-self: flex-end;
 }
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-x-auto{
+  overflow-x: auto;
 }
 
 .rounded{
@@ -825,6 +881,11 @@ input:invalid + .help {
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 
+.bg-neutral-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(50 76 42 / var(--tw-bg-opacity));
@@ -872,6 +933,10 @@ input:invalid + .help {
   padding-bottom: 1.5rem;
 }
 
+.pl-2{
+  padding-left: 0.5rem;
+}
+
 .pr-0{
   padding-right: 0px;
 }
@@ -882,6 +947,18 @@ input:invalid + .help {
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pb-12{
+  padding-bottom: 3rem;
 }
 
 .text-center{
@@ -1016,6 +1093,10 @@ input:invalid + .help {
 }
 
 @media (min-width: 640px){
+  .sm\:w-42{
+    width: 180px;
+  }
+
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

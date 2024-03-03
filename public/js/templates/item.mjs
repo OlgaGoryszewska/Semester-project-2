@@ -1,4 +1,5 @@
-import { removeItem } from "../listing/remove.mjs";
+import {setupBidButtonListener} from "../handlers/bidHandler.mjs"
+
 
 export function itemTemplate(postData) {
     const post = document.createElement("div");
@@ -77,8 +78,10 @@ export function itemTemplate(postData) {
     button.classList.add("border", "rounded-md", "border-secondary-200", "block", "w-full", "p-2", "mt-6");
     button.addEventListener("click", () => console.log(postData));
     post.appendChild(button);
+    setupBidButtonListener(button, postData.id);
 
     return post;
+    
 }
 
 export async function renderItemTemplates(postsData, parent){
