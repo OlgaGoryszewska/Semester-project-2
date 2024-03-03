@@ -10,6 +10,7 @@ import { logoutHandler } from "./handlers/logoutHandler.mjs";
 import { getProfile } from "./handlers/getProfile.mjs";
 import {displayProfileCredits} from "./templates/index.mjs"
 import {displayProfile} from "./templates/index.mjs"
+import { displayErrorMessage } from "./logic/index.mjs"
 
 
 
@@ -42,6 +43,7 @@ function router(){
         renderPosts();
         break;
       case "/register.html":
+        displayErrorMessage();
         registerFormHandler();
         break;
       case "/login-form.html":
@@ -59,13 +61,3 @@ function router(){
 
 
 
-// Loading only 10 posts on the page
-
-// async function testTemplate() {
-//     const items = await itemMethods.getItems();
-//     const firstTenItems = items.slice(0, 10);
-//     const container = document.querySelector("#container");
-//     renderItemTemplates(firstTenItems, container);
-// }
-
-// testTemplate()
