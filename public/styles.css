@@ -636,6 +636,18 @@ input:invalid + .help {
   margin-top: 1.5rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mr-6{
+  margin-right: 1.5rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1006,6 +1018,11 @@ input:invalid + .help {
 .hover\:bg-neutral-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(226 224 224 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 92 0 / var(--tw-bg-opacity));
 }
 
 .hover\:text-secondary-200:hover{
