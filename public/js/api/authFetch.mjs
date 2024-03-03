@@ -22,3 +22,9 @@ export async function authFetch(url, options) {
         throw error; 
     }
 }
+
+export function isUserAuthenticated() {
+    const authToken = load('authToken');
+    return Boolean(authToken);
+}
+
